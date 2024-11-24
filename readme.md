@@ -19,3 +19,51 @@
 > > > 3、下载后放入chrome所在目录
 > > >
 > > > > 并且放入虚拟环境中 
+
+## xpath的一些芝士
+
+* 从根目录开始
+
+  > /html/body ...............
+
+* 通过属性锁定
+
+  > 如div的属性   
+  >
+  > > > div[@class='typing']
+  > >
+  > > 如果想要同时拥有两个属性的标签
+  > >
+  > > ​	div[@class='typing' and @class='1']
+  > >
+  > > 或者关系的 and 改为or 即可
+  >
+  > div[1] 数数 使用1开始的
+
+  
+
+  
+
+  # selenium
+
+  * 添加一些反扒手段
+
+    > 包含头文件 from selenium.webdriver.chrome.options import Options
+    >
+    > chrome_options = Options()
+    >
+    >  
+    >
+    > * 添加user-agent
+    > * 使用ip
+
+
+
+* 等待子页面加载
+
+  > 包含头文件
+  >
+  > ​	from selenium.webdriver.support.ui import WebDriverWait
+  > ​	from selenium.webdriver.support import expected_conditions as EC
+  >
+  > 
